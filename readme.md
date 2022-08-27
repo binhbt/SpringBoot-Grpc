@@ -1,8 +1,8 @@
-# build  
+# Build  
 ./mvnw clean install  
 # Run grpc server  default on 9090 port  
 java -jar target/grpc-server-0.0.1-SNAPSHOT.jar  
-# test with grpcurl  
+# Test with grpcurl  
 grpcurl --plaintext localhost:9090 list  
 grpcurl --plaintext localhost:9090 list com.example.grpc.server.grpcserver.HelloService  
 grpcurl --plaintext localhost:9090  com.example.grpc.server.grpcserver.HelloService/hello "firstName: 'Tome', lastName:'Holland'"  
